@@ -7,6 +7,121 @@ body {
   width: 20px;
   margin-top: 30px;
 }
+.googlebrand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+}
+.brandimage {
+    width: 400px;
+    height: 180px;;
+}
+/* form css */
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #747477;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/voice.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+.googleform {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 100px;
+}
+.googlebuttons {
+    display: inline-block;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    border: 0px;
+    height: 30px;
+    width: 150px;
+    color: #747477;
+}
+
+.googlebuttons:hover {
+    color: #000;
+    border: 1px solid #747477;
+}
+.buttonholder {
+    position: absolute;
+    top:380px;
+    left:400px;
+    right: 0;
+    width: 500px;
+    height: 35px;
+    padding-left: 100px;
+    
+}
+.languages_div {
+    position: absolute;
+    top:430px;
+    left:370px;
+    right: 0;
+    width: 500px;
+    height: 35px;
+    padding-left: 80px; 
+}
+.languages {
+    text-decoration: none;
+}
+.languages:hover {
+    text-decoration-line: underline;
+}
+.footerdiv {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    border-top: 1px solid rgb(197, 206, 177);
+    background-color: #f1f1f1;
+}
+
+.country {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 40px;
+    border-top: 1px solid rgb(197, 206, 177);
+    border-bottom: 1px solid rgb(197, 206, 177);
+    background-color: #f1f1f1;  
+}
+.country ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.country ul li {
+    float: left;
+}
+
+.country ul li a {
+    display: block;
+    color: #747477;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.offer {
+    color: #747477; 
+}
+/* form css */
 nav {
     /* position: fixed; */
     top:0;
@@ -46,4 +161,34 @@ nav ul li button {
     border-radius: 4px;
     color:#fff; 
     font-size: 15px;
+}
+
+/* footer div */
+.footerdiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footerdiv ul li {
+    float: left;
+}
+
+.footerdiv ul li a {
+    display: block;
+    color: #747477;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footerdiv ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+/* footer div */
+.pushright {
+    float:right;
 }
