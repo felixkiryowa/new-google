@@ -5,8 +5,9 @@ body {
 .googleappsimage{
   height: 20px;
   width: 20px;
-  margin-top: 30px;
+  margin-top: 3px;
 }
+
 .googlebrand{
     display: flex;
     flex-direction: column;
@@ -28,10 +29,16 @@ input[type=text] {
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image: url('../images/voice.png');
+    
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
+}
+#search_term  {
+    background-image: url('../images/Google_microphone_logo.png');
+    background-position: right;
+    padding-right: 30px;
+    background-size: 15px;
 }
 .googleform {
     position: absolute;
@@ -133,26 +140,25 @@ nav {
     position:absolute; 
     z-index:1;
 }
-
 nav ul {
-    
-    float: right;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    overflow: hidden;
 }
 
 nav ul li {
-    list-style: none;
+    float: right;
 }
 
 nav ul li a {
-    line-height: 80px;
+    display: block;
     color: #000;
-    padding: 5px 10px;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-   
 }
+
 nav ul li button {
     margin-top: 26px;
     border: 0px;
@@ -183,12 +189,18 @@ nav ul li button {
     text-decoration: none;
 }
 
-.footerdiv ul li a:hover:not(.active) {
-    background-color: #111;
-}
-
-
 /* footer div */
 .pushright {
     float:right;
 }
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: rgb(155, 6, 6);
+    line-height: 500px;
+    text-align: center;
+    background: rgb(63, 2, 87)
+  }
