@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    overflow: auto;
 }
 
 .googleappsimage{
@@ -14,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 70vh;
+    min-height: 60vh;
 }
 .brandimage {
     width: 400px;
@@ -25,7 +26,7 @@ input[type=text] {
     width: 100%;
     box-sizing: border-box;
     box-shadow: 1px 1px 1px 1px #747477;
-    border: 2px solid #ccc;
+    border:none;
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
@@ -37,10 +38,11 @@ input[type=text] {
 #search_term  {
     background-image: url('../images/Google_microphone_logo.png');
     background-position: right;
-    padding-right: 30px;
+    padding-right: 60px;
     background-size: 15px;
 }
 .googleform {
+    display: flex;
     position: absolute;
     top:0;
     bottom: 0;
@@ -65,23 +67,13 @@ input[type=text] {
     border: 1px solid #747477;
 }
 .buttonholder {
-    position: absolute;
-    top:380px;
-    left:400px;
-    right: 0;
-    width: 500px;
-    height: 35px;
-    padding-left: 100px;
+   display: flex;
+   justify-content: center;
     
 }
 .languages_div {
-    position: absolute;
-    top:430px;
-    left:370px;
-    right: 0;
-    width: 500px;
-    height: 35px;
-    padding-left: 80px; 
+   display: flex;
+   justify-content: center
 }
 .languages {
     text-decoration: none;
@@ -90,6 +82,7 @@ input[type=text] {
     text-decoration-line: underline;
 }
 .footerdiv {
+    display: flex;
     position: fixed;
     width: 100%;
     height: 40px;
@@ -98,7 +91,9 @@ input[type=text] {
     background-color: #f1f1f1;
 }
 
+
 .country {
+    display: flex;
     position: fixed;
     width: 100%;
     height: 40px;
@@ -107,18 +102,8 @@ input[type=text] {
     border-bottom: 1px solid rgb(197, 206, 177);
     background-color: #f1f1f1;  
 }
-.country ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-.country ul li {
-    float: left;
-}
-
-.country ul li a {
+.country div a  {
     display: block;
     color: #747477;
     text-align: center;
@@ -129,8 +114,7 @@ input[type=text] {
     color: #747477; 
 }
 /* form css */
-nav {
-    /* position: fixed; */
+/* nav {
     top:0;
     left: 0;
     width: 100%;
@@ -139,8 +123,8 @@ nav {
     box-sizing: border-box;
     position:absolute; 
     z-index:1;
-}
-nav ul {
+} */
+/* nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -167,21 +151,10 @@ nav ul li button {
     border-radius: 4px;
     color:#fff; 
     font-size: 15px;
-}
+} */
 
 /* footer div */
-.footerdiv ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.footerdiv ul li {
-    float: left;
-}
-
-.footerdiv ul li a {
+.footerdiv div  a {
     display: block;
     color: #747477;
     text-align: center;
@@ -195,10 +168,38 @@ nav ul li button {
 }
 
 .circle {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     padding-top: 5px;
     color: rgb(248, 245, 245);
     border-radius: 50%;
     background: rgb(63, 2, 87)
   }
+/* flexbox */
+  .container {
+    /* border: 5px solid #ffcc5c; */
+    display: flex;
+    flex-direction: row;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    position:absolute; 
+    z-index:1;
+  }
+  .container div a {
+    display: block;
+    color: #747477;
+    text-align: center;
+    padding: 14px 5px;
+    text-decoration: none;
+  }
+  .images {
+      margin-left: auto;
+  }
+  .privacy {
+      margin-left:auto;
+  }
+  
